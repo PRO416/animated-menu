@@ -4,6 +4,8 @@ const navItems = document.querySelectorAll('nav li');
 const close = document.querySelector('.close');
 const line = document.querySelector('.line');
 
+const len = navItems.length - 1;
+
 set.addEventListener('click', () => {
   navItems.forEach((l, k) => {
     l.style.transform = 'translateX(0)';
@@ -16,9 +18,7 @@ set.addEventListener('click', () => {
 
 close.addEventListener('click', () => {
   navItems.forEach((l, k) => {
-    k -= 7;
-    k *= k;
-    k = Math.sqrt(k);
+    k = len - k;
     l.style.transform = 'translateX(150%)';
     l.style.transitionDelay = `${k / 15}s`;
     l.style.opacity = 0;
