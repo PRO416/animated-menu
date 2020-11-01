@@ -1,0 +1,144 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(116, 106, 46, 0.699)), to(#7f5ba8));
+  background: linear-gradient(to bottom, rgba(116, 106, 46, 0.699), #7f5ba8);
+  overflow: hidden;
+}
+
+.back, .set {
+  height: 5rem;
+  width: 5rem;
+  color: white;
+  margin: 2rem 0 2rem 2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.set {
+  margin-bottom: 0;
+}
+
+nav {
+  height: 40vh;
+  width: 1vw;
+  margin-left: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+nav ul {
+  width: 10vw;
+  list-style-type: none;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem 0;
+}
+
+nav ul li {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
+}
+
+.line {
+  height: 40vh;
+  width: 1px;
+  border-left: 1px solid white;
+  left: 4.5rem;
+  position: absolute;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.close {
+  height: 5rem;
+  width: 5rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 2rem;
+  -webkit-transform: translateY(-32vh) scale(0);
+          transform: translateY(-32vh) scale(0);
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+  position: relative;
+  cursor: pointer;
+  -webkit-transform-origin: 50% -100%;
+          transform-origin: 50% -100%;
+}
+
+.close .left {
+  position: absolute;
+  border-left: 1px solid white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  height: 2rem;
+  width: 2rem;
+  left: 57.5%;
+  top: 50%;
+}
+
+.close .right {
+  position: absolute;
+  border-right: 1px solid white;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  height: 2rem;
+  width: 2rem;
+  right: 57.5%;
+  top: 50%;
+}
+/*# sourceMappingURL=style.css.map */
